@@ -1,0 +1,82 @@
+a) select speed, maker
+from Laptop
+natural join 
+Product
+where hd>30
+
+b) select model ,price
+from Product
+natural join printer
+where maker = "B"
+union
+select model,price
+from Product
+natural join pc
+where maker = "B"
+union
+select model,price
+from Product
+natural join laptop
+where maker = "B"
+
+c) select maker
+from Product
+where Product.type ="pc"
+except
+select maker
+from Product
+where Product.type ="laptop"
+
+d) SELECT hd
+    FROM pc
+    GROUP BY hd
+    HAVING COUNT(*) >= 2
+    
+e) select a.model,b.model
+    from pc a, pc b 
+    where a.model<b.model and a.speed = b.speed and a.ram = b.ram
+ 
+f) select maker
+from(select model,speed from pc union 
+select model,speed from Laptop)as r1
+natural join Product 
+where speed > 3.0
+group by maker
+having count(*) >= 2
+g) select maker
+   from pc
+   natural join Product
+   where speed >=3
+
+h) SELECT max(price)
+FROM Printer
+
+
+i) select *
+  from Laptop,pc
+  where Laptop.speed < (SELECT min(speed) FROM pc)
+
+j) select model,max(price)
+  from 
+  (
+  SELECT model, price FROM pc WHERE price = (SELECT MAX(price) FROM pc)
+  UNION
+  SELECT model, price FROM Laptop WHERE price = (SELECT MAX(price) FROM Laptop)
+  UNION
+  SELECT model, price FROM Printer WHERE price = (SELECT MAX(price) FROM printer)) AS          t1
+
+k) select maker
+from(select min(price),model
+from Printer
+where color = "true")AS t1
+natural join Product
+
+l) select maker
+from
+(select model,max(speed),min(ram)
+from pc)AS t1
+natural join product
+
+m)
+
+  

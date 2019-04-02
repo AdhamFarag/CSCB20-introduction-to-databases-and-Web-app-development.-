@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% if title%}
+	<title>My home page {{title}}</title>
+	{% else %}
+	<title>My home page</title>
+	{% endif %}
+</head>
+<body>
+	<a href="/logout">Logout</a>
+	{% for post in data %}
+       <h1>Student Name:{{post.studentname}}</h1>
+       <p>Quiz 1: {{post.quiz1}}</p>
+       <p>Quiz 2: {{post.quiz2}}</p>
+       <p>Quiz 3: {{post.quiz3}}</p>
+       <p>Midterm Exam:{{post.midtermexam}}</p>
+       <p>Final Exam: {{post.finalexam}}</p>
+	{% endfor %}
+</body>
+</html>

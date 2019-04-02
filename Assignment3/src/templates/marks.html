@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="static/css/style marks.css">
+  </head>
+<body>
+
+		          <div class="heading"><p>CSCB20 - Introduction to Databases and Web Applications</p></div>
+<ul id = nav>
+  <li><a href="index.html"target="_blank">Home</a></li>
+  <li><a href="calender.html"target="_blank">Calendar</a></li>
+  <li><a href="https://piazza.com/class/jr7mjhytaij3jc"target="_blank">Discussion Board</a></li>
+  <li><a href="http://markus.utsc.utoronto.ca/cscb20w19"target="_blank">MarkUs</a></li>
+  <li><a href="lectures.html"target="_blank">Lectures</a></li>
+  <li><a href="labs.html"target="_blank">Labs</a></li>
+  <li><a href="Assignments.html"target="_blank">Assignments</a></li>
+  <li><a href="test.html"target="_blank">Tests</a></li>
+  <li><a href="Resources.html"target="_blank">Resources</a></li>
+  <li><a href="Feedback.html"target="_blank">Feedback</a></li>
+</ul>
+	<a href="/logout">Logout</a>
+	<div class = "margin">
+		
+	</div>
+	<div class ="data">
+		{% for post in data %}
+       <h1>Student Name:{{post.studentname}}</h1>
+       <p>Quiz 1: {{post.quiz1}}</p>
+       <p>Quiz 2: {{post.quiz2}}</p>
+       <p>Quiz 3: {{post.quiz3}}</p>
+       <p>Midterm Exam:{{post.midtermexam}}</p>
+       <p>Final Exam: {{post.finalexam}}</p>
+	{% endfor %}</div>
+	
+<div class="footer">
+  <p>Feel free to visit the <a href="http://web.cs.toronto.edu/people/faculty.htm"target="_blank">Faculty of Computer Science at UofT</a></p>
+  <p>This site was created by <b>Adham Farag</b> and <b>Aaiyan Virji</b></p>
+</div>
+</body>
+</html>

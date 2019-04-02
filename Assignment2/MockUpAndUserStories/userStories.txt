@@ -1,0 +1,21 @@
+As A user you should be able to....:
+1.As A user you should be able to access the course description
+2. As A user you should be able to See the pre-reqs for the course
+3. As A user you should be able to See Exclusions for the following course
+4. As A user you should be able to access to Syllabus of the course
+5. As A user you should be able to See the weightage of all the assessments of the course
+6. As A user you should be able to Have access to the Instructor information.
+7. As A user you should be able to have access to the faculty of computer science website
+8. As A user you should be able to See when the lectures are and what time they are occuring.
+9. As A user you should be able to You should be able to see tutorial times and where they occur 
+10. As A user you should be able to You will have access to the authors of the website
+11. As A user you should be able to you will have access the google calender. In this calender you will be able to see assignment due dates , quiz due dates and on this calender you will have access to lec and tut timings
+12. As A user you should be able to You will have access to the class disscussion board which is on the piazza platform
+13. As A user you should be able to You should have access to the lecture slides and additional handouts
+14. As A user you should be able to You should have access to the tutorial material along with solutions
+15. As A user you should be able to you will be informed that tutorials start date and that tutorials will not start from week 1
+16. As A user you should be able to you will be able to access all due dates and assignment hand out material
+17. As A user you should be able to you will have access to when the tests are and the weighttage of the test along with the dates to the tests.
+18. As A user you should be able to You will have  access to resources in which The authors have provided reccomneded textbooks and pdfs to learn css, html and javascript
+19. As A user you should be able to give feed back to the course Instructor
+20. As A user you should be able to ask any question or concerns will be able to given in to Instructor in feedback category.
